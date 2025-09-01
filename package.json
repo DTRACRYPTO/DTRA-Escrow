@@ -1,0 +1,25 @@
+{
+  "name": "dtra-escrow-contracts",
+  "version": "1.0.0",
+  "description": "A next-generation **multi-asset escrow system** built on **Hedera Smart Contract Service (HSCS)**.   Supports **HBAR**, **HTS-mapped ERC-20 tokens** (e.g. DTRA, wBTC, wETH), and cross-chain **BTC/ETH hash-time-locked contracts (HTLCs)**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DTRACRYPTO/DTRA-Escrow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/DTRACRYPTO/DTRA-Escrow/issues"
+  },
+  "homepage": "https://github.com/DTRACRYPTO/DTRA-Escrow#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "hardhat": "^3.0.3"
+  }
+}
