@@ -1,25 +1,44 @@
 {
-  "name": "dtra-escrow-contracts",
+  "name": "dtra-ico",
   "version": "1.0.0",
-  "description": "A next-generation **multi-asset escrow system** built on **Hedera Smart Contract Service (HSCS)**.   Supports **HBAR**, **HTS-mapped ERC-20 tokens** (e.g. DTRA, wBTC, wETH), and cross-chain **BTC/ETH hash-time-locked contracts (HTLCs)**.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network hederaTestnet"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DTRACRYPTO/DTRA-Escrow.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/DTRACRYPTO/DTRA-Escrow/issues"
-  },
-  "homepage": "https://github.com/DTRACRYPTO/DTRA-Escrow#readme",
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
-    "hardhat": "^3.0.3"
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "dotenv": "^16.6.1",
+    "hardhat": "^2.26.3"
   }
 }
+echo '{
+  "name": "dtra-escrow-contracts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "hardhat compile",
+    "test": "hardhat test"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.7",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "dotenv": "^16.4.5"
+  }
+}'
+{
+  "name": "dtra-escrow",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "hardhat compile",
+    "test": "hardhat test"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.22.7",
+    "dotenv": "^16.4.5"
+  }
+}
+
